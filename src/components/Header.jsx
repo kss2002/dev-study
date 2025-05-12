@@ -1,16 +1,16 @@
-import React from 'react';
+import '../assets/styles/Header.css';
 
 const Header = () => {
   return (
     <>
       <header>
-        <div>
-          <h1>Logo</h1>
+        <div className="header-container">
+          <h1 className="header-logo">Dev Study</h1>
           <nav>
-            <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
+            <ul className="header-nav">
+              <li className="header-li">Home</li>
+              <li className="header-li">About</li>
+              <li className="header-li">Contact</li>
             </ul>
           </nav>
         </div>
