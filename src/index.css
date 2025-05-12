@@ -2,14 +2,20 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+@font-face {
+  src: url('../src/assets/font/VITRO\ CORE\ TTF.ttf');
+  font-family: 'VITRO';
+}
+
 a {
   text-decoration: inherit;
-}
-a:hover {
-  color: white;
 }
 
 body {
   margin: 0;
-  min-width: 320px;
+  /*min-width: 320px;*/
+}
+
+li {
+  list-style: none;
 }
