@@ -12,6 +12,10 @@ npm run dev
 
 감사합니다.
 
+## 배포 날짜
+
+- 2025.05.22
+
 - 사이트 링크 >
 
-https://www.netlify.com
+https://devstudy777.netlify.app
