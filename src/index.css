@@ -1,8 +1,11 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-
-  --boxshadow-main: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  --border-sub: 1px solid #ddd;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
@@ -11,18 +14,22 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: inherit;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  /*min-width: 320px;*/
+  min-width: 320px;
+  min-height: 100vh;
 }
 
-li {
-  list-style: none;
+#root {
+  width: 100%;
+  min-height: 100vh;
 }

@@ -1,0 +1,128 @@
+.testimonials {
+  background-color: var(--neutral-200);
+  padding: var(--space-xxl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials::before {
+  content: '';
+  position: absolute;
+  left: -100px;
+  bottom: -100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--secondary-light) 0%, rgba(255, 255, 255, 0) 70%);
+  opacity: 0.2;
+}
+
+.testimonials-slider {
+  margin-top: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.testimonials-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.testimonial-card {
+  flex: 0 0 100%;
+  padding: var(--space-lg);
+}
+
+.testimonial-content {
+  background-color: white;
+  border-radius: 12px;
+  padding: var(--space-xl);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quote-icon {
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  font-size: 6rem;
+  color: var(--primary);
+  opacity: 0.1;
+  font-family: serif;
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--neutral-700);
+  margin-bottom: var(--space-lg);
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.author-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.author-info {
+  flex: 1;
+}
+
+.author-name {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--neutral-800);
+}
+
+.author-role {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--primary);
+}
+
+.testimonial-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-md);
+  gap: var(--space-xs);
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--neutral-400);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.indicator.active {
+  background-color: var(--primary);
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .testimonial-content {
+    padding: var(--space-lg);
+  }
+  
+  .quote-text {
+    font-size: 1rem;
+  }
+}
