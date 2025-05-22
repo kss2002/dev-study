@@ -2,7 +2,7 @@
 
 ## React + Vite
 
-```
+```bash
 npm run dev
 ```
 
@@ -10,12 +10,13 @@ npm run dev
 
 추후 Netlify를 이용해서 배포할 예정입니다.
 
+> https://www.netlify.com
+
 감사합니다.
 
 ## 배포 날짜
 
 - 2025.05.22
 
-- 사이트 링크 >
-
-https://devstudy777.netlify.app
+> 사이트 링크
+> https://devstudy777.netlify.app
