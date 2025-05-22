@@ -27,19 +27,21 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
-      <Header isScrolled={isScrolled} />
-      <main>
-        <Hero />
-        <About />
-        <Benefits />
-        <Curriculum />
-        <Testimonials />
-        <FAQ />
-        <Register />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <div className="app">
+        <Header isScrolled={isScrolled} />
+        <main>
+          <Hero />
+          <About />
+          <Benefits />
+          <Curriculum />
+          <Testimonials />
+          <FAQ />
+          <Register />
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }
 
