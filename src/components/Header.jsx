@@ -19,7 +19,7 @@ function Header({ isScrolled }) {
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container header-container">
-        <div className="logo">Dev-study</div>
+        <div className="logo">DEV-STUDY</div>
 
         <div
           className={`mobile-menu-btn ${isMenuOpen ? 'active' : ''}`}
