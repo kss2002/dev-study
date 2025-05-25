@@ -100,6 +100,7 @@ h1 {
 h2 {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   margin-bottom: var(--space-md);
+  color: var(--primary-dark);
 }
 
 h3 {
@@ -112,6 +113,7 @@ p {
 }
 
 .btn {
+  box-shadow: var(--primary-light) 0px 8px 24px;
   display: inline-block;
   padding: var(--space-sm) var(--space-lg);
   background-color: var(--primary);
