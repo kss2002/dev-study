@@ -5,7 +5,7 @@ function Hero() {
     <section className="hero" id="hero">
       <div className="container hero-container">
         <div className="hero-content">
-          <h1>개발 실력을 높이세요</h1>
+          <h1 className="hero-h1">개발 실력을 높이세요</h1>
           <p className="hero-subtitle">
             함께 성장하는 개발 스터디에서 실무 프로젝트와 전문가 멘토링을 통해
             실력을 키워보세요
@@ -47,10 +47,7 @@ function Hero() {
 
   return (
     <div className="success">
-      {skills.map(skill => (
-        <Career key={skill.id} 
-          growth={skill.level} />
-      ))}
+      <h1>개발 실력을 높이세요</h1>
     </div>
   );
 }`}</code>
