@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Benefits from './components/Benefits';
 import Curriculum from './components/Curriculum';
-import Testimonials from './components/Testimonials';
+//import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Register from './components/Register';
 import Footer from './components/Footer';
@@ -35,7 +35,8 @@ function App() {
           <About />
           <Benefits />
           <Curriculum />
-          <Testimonials />
+          {/* 후기 섹션은 추후 받으면 오픈 */}
+          {/* <Testimonials /> */}
           <FAQ />
           <Register />
         </main>
