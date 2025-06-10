@@ -84,12 +84,10 @@ function Register() {
 
             <div className="testimonial-snippet">
               <p>
-                "이 프로그램은 제 경력을 완전히 바꾸어 놓았습니다. 배운 기술들
-                덕분에 꿈꾸던 직장에 취업할 수 있었습니다."
+                "지식에 대한 투자는 최고의 보상을 <br />
+                가져다 줄 것이다."
               </p>
-              <div className="snippet-author">
-                - 김대현, 소프트웨어 엔지니어
-              </div>
+              <div className="snippet-author">- 벤자민 프랭클린</div>
             </div>
           </div>
 
