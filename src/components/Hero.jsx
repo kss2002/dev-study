@@ -18,18 +18,15 @@ function Hero() {
               자세히 알아보기
             </a>
           </div>
+
           <div className="hero-stats">
-            <div className="stat">
-              <span className="stat-number">200+</span>
-              <span className="stat-label">수료생</span>
-            </div>
             <div className="stat">
               <span className="stat-number">12</span>
               <span className="stat-label">주 과정</span>
             </div>
             <div className="stat">
-              <span className="stat-number">92%</span>
-              <span className="stat-label">취업률</span>
+              <span className="stat-number">100% 환불</span>
+              <span className="stat-label">불만족시..</span>
             </div>
           </div>
         </div>
