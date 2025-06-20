@@ -50,7 +50,8 @@ function Header({ isScrolled }) {
                 커리큘럼
               </a>
             </li>
-            <li className="nav-item">
+            {/*
+              <li className="nav-item">
               <a
                 href="#testimonials"
                 onClick={() => scrollToSection('testimonials')}
@@ -58,6 +59,9 @@ function Header({ isScrolled }) {
                 후기
               </a>
             </li>
+             // 후기 얻으면 추가하기
+             */}
+
             <li className="nav-item">
               <a href="#faq" onClick={() => scrollToSection('faq')}>
                 자주 묻는 질문

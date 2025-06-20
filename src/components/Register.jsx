@@ -67,18 +67,20 @@ function Register() {
           <div className="register-info">
             <div className="info-block">
               <h3>다음 기수 시작</h3>
-              <p className="start-date">2025년 10월 15일</p>
-              <p>모집 인원이 제한되어 있습니다. 조기 신청을 권장드립니다.</p>
+              <p className="start-date">2025년 7월 1일</p>
+              <p>
+                모집 인원이 제한되어 있습니다. <br />
+                조기 신청을 권장드립니다.
+              </p>
             </div>
 
             <div className="info-block">
               <h3>프로그램 세부사항</h3>
               <ul className="details-list">
-                <li>12주 집중 프로그램</li>
+                <li>1달 집중 프로그램</li>
                 <li>주 2회 실시간 온라인 세션</li>
                 <li>24시간 커뮤니티 지원</li>
-                <li>1:1 멘토링 세션</li>
-                <li>수료증 발급</li>
+                <li>1대1 언제든 질문 가능</li>
               </ul>
             </div>
 

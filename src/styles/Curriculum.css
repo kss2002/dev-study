@@ -1,52 +1,63 @@
 .curriculum {
-  background-color: var(--neutral-100);
-  padding: var(--space-xxl) 0;
+  background: linear-gradient(120deg, #f0fdfa 0%, #e0e7ff 100%);
+  padding: 48px 0 64px 0;
 }
 
 .curriculum-tabs {
-  margin-top: var(--space-xl);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 32px 0 16px 0;
+  background: none;
+  box-shadow: none;
 }
 
-.tab-buttons {
+.curriculum-tab-btn {
+  background: linear-gradient(90deg, #e0e7ff 0%, #f0fdfa 100%);
+  color: #2d3748;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 28px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(80, 80, 180, 0.07);
+  margin-bottom: 0;
+}
+
+.curriculum-tab-btn.active,
+.curriculum-tab-btn:hover {
+  background: linear-gradient(90deg, #6366f1 0%, #06b6d4 100%);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(80, 80, 180, 0.13);
+}
+
+.tech-tabs {
   display: flex;
-  border-bottom: 1px solid var(--neutral-300);
-  background-color: var(--neutral-200);
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  background: none;
 }
 
 .tab-button {
-  flex: 1;
-  padding: var(--space-md);
-  background: none;
+  background: #f3f4f6;
+  color: #374151;
   border: none;
+  border-radius: 16px 16px 0 0;
+  padding: 10px 22px;
   font-size: 1rem;
   font-weight: 600;
-  color: var(--neutral-700);
   cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: 0;
 }
 
+.tab-button.active,
 .tab-button:hover {
-  color: var(--primary);
-}
-
-.tab-button.active {
-  color: var(--primary);
-  background-color: white;
-}
-
-.tab-button.active::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: var(--primary);
+  background: linear-gradient(90deg, #6366f1 0%, #06b6d4 100%);
+  color: #fff;
 }
 
 .tab-content {
@@ -74,22 +85,26 @@
   gap: var(--space-xl);
 }
 
-.topics, .projects {
+.topics,
+.projects {
   flex: 1;
 }
 
-.topics h4, .projects h4 {
+.topics h4,
+.projects h4 {
   font-size: 1.2rem;
   margin-bottom: var(--space-sm);
   color: var(--neutral-800);
 }
 
-.topics ul, .projects ul {
+.topics ul,
+.projects ul {
   list-style-type: none;
   padding-left: 0;
 }
 
-.topics li, .projects li {
+.topics li,
+.projects li {
   padding: var(--space-xs) 0;
   padding-left: var(--space-md);
   position: relative;
@@ -144,34 +159,114 @@
   opacity: 0.9;
 }
 
-@media (max-width: 768px) {
-  .tab-buttons {
-    flex-wrap: wrap;
+.curriculum-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 18px;
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(80, 80, 180, 0.08);
+}
+
+.curriculum-table th {
+  background: linear-gradient(90deg, #6366f1 0%, #06b6d4 100%);
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 700;
+  padding: 16px 8px;
+  border: none;
+}
+
+.curriculum-table td {
+  background: #f9fafb;
+  color: #374151;
+  font-size: 1rem;
+  padding: 14px 10px;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: top;
+}
+
+.curriculum-table tr:last-child td {
+  border-bottom: none;
+}
+
+.curriculum-table ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.curriculum-table li {
+  margin-bottom: 4px;
+  line-height: 1.6;
+}
+
+.curriculum-goal {
+  font-size: 1.08rem;
+  color: #0ea5e9;
+  background: #f0fdfa;
+  border-left: 4px solid #06b6d4;
+  padding: 10px 18px;
+  border-radius: 8px;
+  margin: 18px 0 8px 0;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .curriculum-table th,
+  .curriculum-table td {
+    font-size: 0.97rem;
+    padding: 10px 4px;
   }
-  
-  .tab-button {
-    flex-basis: 50%;
-  }
-  
-  .content-details {
-    flex-direction: column;
-  }
-  
-  .program-info {
-    flex-wrap: wrap;
-  }
-  
-  .info-item {
-    flex-basis: 50%;
+  .curriculum-goal {
+    font-size: 0.98rem;
+    padding: 8px 10px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+  .curriculum-tabs,
+  .tech-tabs {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .curriculum-tab-btn,
   .tab-button {
-    flex-basis: 100%;
+    font-size: 0.97rem;
+    padding: 8px 10px;
+    border-radius: 12px;
   }
-  
-  .info-item {
-    flex-basis: 100%;
+  .curriculum-table th,
+  .curriculum-table td {
+    font-size: 0.93rem;
+    padding: 7px 2px;
   }
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.section-header h2 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #6366f1;
+  margin-bottom: 8px;
+}
+
+.section-header .section-subtitle {
+  color: #64748b;
+  font-size: 1.08rem;
+  margin-bottom: 0;
+}
+
+.curriculum-detail h3 {
+  font-size: 1.3rem;
+  color: #06b6d4;
+  font-weight: 700;
+  margin-top: 18px;
+  margin-bottom: 0;
 }
