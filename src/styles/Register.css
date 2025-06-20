@@ -14,7 +14,11 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: radial-gradient(circle, var(--primary-light) 0%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(
+    circle,
+    var(--primary-light) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
   opacity: 0.2;
   z-index: 1;
 }
@@ -113,9 +117,9 @@ label {
   color: var(--neutral-800);
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
+input[type='text'],
+input[type='email'],
+input[type='tel'],
 select,
 textarea {
   width: 100%;
@@ -146,7 +150,7 @@ textarea:focus {
   cursor: pointer;
 }
 
-.checkbox-label input[type="checkbox"] {
+.checkbox-label input[type='checkbox'] {
   margin-right: var(--space-xs);
 }
 
@@ -203,11 +207,11 @@ textarea:focus {
   .register-container {
     flex-direction: column;
   }
-  
+
   .register-info {
     order: 2;
   }
-  
+
   .register-form {
     order: 1;
     margin-bottom: var(--space-lg);
@@ -218,4 +222,42 @@ textarea:focus {
   .checkbox-group {
     grid-template-columns: 1fr;
   }
+}
+
+.discord-btn {
+  width: 100%;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #5865f2 0%, #404eed 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  font-size: 1.08rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(88, 101, 242, 0.13);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.discord-btn a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  width: 100%;
+  display: block;
+}
+.discord-btn:hover {
+  background: linear-gradient(90deg, #404eed 0%, #5865f2 100%);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(88, 101, 242, 0.18);
+}
+/* 디스코드 아이콘(이모지) 추가 예시 */
+.discord-btn::before {
+  content: '\1F47E'; /* 👾 */
+  font-size: 1.2em;
+  margin-right: 8px;
+  vertical-align: middle;
 }

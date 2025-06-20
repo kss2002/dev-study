@@ -74,8 +74,13 @@ function FAQ() {
 
         <div className="more-questions">
           <p>더 궁금하신 점이 있으신가요?</p>
-          <a href="#register" className="btn btn-outline">
-            문의하기
+          <a
+            href="http://pf.kakao.com/_SxcBan/chat"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline"
+          >
+            카카오톡 문의하기
           </a>
         </div>
       </div>
