@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../styles/Curriculum.css';
 
+// 프론트 커리큘럼
 const frontendCurriculums = [
   {
     id: 'htmlcss',
@@ -671,6 +672,10 @@ function Curriculum() {
             각 커리큘럼은 입문자가 해당 기술의 핵심을 4주 안에 마스터하는 것을
             목표로 하며, 주차별 학습 목표, 구체적인 학습 내용, 그리고 실습
             과제를 포함하여 체계적인 학습이 가능하도록 설계했습니다.
+            <br />
+          </p>
+          <p className="section-subtitle-exl">
+            (원하는 커리큘럼이 없다면 본인이 커리큘럼을 짜도 좋습니다!)
           </p>
         </div>
         {/* 분야별 탭 */}

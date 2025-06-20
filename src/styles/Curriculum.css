@@ -258,9 +258,15 @@
 }
 
 .section-header .section-subtitle {
-  color: #64748b;
+  color: black;
   font-size: 1.08rem;
   margin-bottom: 0;
+}
+
+.section-subtitle-exl {
+  color: red;
+  font-size: 1.08rem;
+  margin-top: 8px;
 }
 
 .curriculum-detail h3 {
