@@ -261,3 +261,35 @@ textarea:focus {
   margin-right: 8px;
   vertical-align: middle;
 }
+
+.timer-active {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.timer-message {
+  text-align: center;
+  margin: 16px 0;
+  color: #555;
+  font-size: 1.1em;
+}
+
+.timer-box {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 8px;
+  font-family: monospace;
+  letter-spacing: 2px;
+  background: #fff;
+  color: red;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: 2px solid red;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.timer-icon {
+  margin-right: 8px;
+}

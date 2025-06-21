@@ -1,4 +1,5 @@
 import '../styles/Register.css';
+import Timer from './Timer';
 
 function Register() {
   return (
@@ -15,7 +16,7 @@ function Register() {
             style={{ marginTop: '12px' }}
           >
             <a
-              href="https://discord.gg/B9ynZKrRxN"
+              href="https://www.latpeed.com/products/teYNA"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -23,6 +24,7 @@ function Register() {
             </a>
           </button>
         </div>
+        <Timer />
 
         <div className="register-container">
           <div className="register-info">
@@ -30,8 +32,8 @@ function Register() {
               <h3>다음 기수 시작</h3>
               <p className="start-date">2025년 7월 1일에 시작합니다.</p>
               <p>
-                모집 인원이 제한되어 있습니다. <br />
-                조기 신청을 권장드립니다.
+                신청하는 시간에 기한이 있습니다. <br />
+                조기 신청을 권장드립니다!
               </p>
             </div>
 
