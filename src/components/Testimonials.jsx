@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import '../styles/Testimonials.css';
 
+// Testimonials 컴포넌트는 수강생들의 후기 슬라이더를 구현합니다.
 function Testimonials() {
   const testimonials = [
     {
