@@ -41,7 +41,7 @@ function Register() {
               <h3>프로그램 세부사항</h3>
               <ul className="details-list">
                 <li>1달 집중 프로그램</li>
-                <li>주 2회 실시간 온라인 세션</li>
+                <li>주 1회 실시간 온라인 세션</li>
                 <li>24시간 커뮤니티 지원</li>
                 <li>1대1 언제든 질문 가능</li>
               </ul>
